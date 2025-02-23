@@ -1,6 +1,11 @@
 .
+├── Readme.md
 ├── go.mod
 ├── go.sum
+├── internals
+│   └── templates
+│       ├── home.templ
+│       └── home_templ.go
 ├── main.go
 ├── package-lock.json
 ├── package.json
@@ -10,9 +15,6 @@
 │       ├── output.css
 │       └── styles.css
 ├── tailwind.config.js
-├── templates
-│   ├── home.templ
-│   └── home_templ.go
 └── tree.txt
 
-4 directories, 12 files
+5 directories, 13 files

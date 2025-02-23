@@ -4,7 +4,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/lordofthemind/gin-tailwind-templ/templates" // Adjust the import path
+	"github.com/lordofthemind/gin-tailwind-templ/internals/templates"
 )
 
 func main() {
