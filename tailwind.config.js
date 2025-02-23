@@ -1,6 +1,9 @@
-// tailwind.config.js
 module.exports = {
-    content: ["./templates/**/*.templ"], // Watch .templ files for Tailwind classes
+    content: [
+        "./internals/templates/**/*.templ", // Watch Templ files
+        "./static/**/*.css",
+        "./main.go",
+    ],
     theme: {
         extend: {},
     },
