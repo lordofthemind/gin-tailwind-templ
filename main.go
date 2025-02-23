@@ -1,6 +1,8 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"github.com/lordofthemind/gin-tailwind-templ/templates" // Adjust the import path
 )
@@ -14,6 +16,10 @@ func main() {
 	// Render the home page
 	r.GET("/", func(c *gin.Context) {
 		templates.HomePage("Gin + Tailwind + Templ", "This is a dynamic message!").Render(c.Request.Context(), c.Writer)
+	})
+
+	r.GET("/api/data", func(c *gin.Context) {
+		c.String(http.StatusOK, "HTMX response!")
 	})
 
 	// Start the server
