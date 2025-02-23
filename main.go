@@ -13,8 +13,7 @@ func main() {
 
 	// Render the home page
 	r.GET("/", func(c *gin.Context) {
-		// Use templ to render the template directly
-		templates.HomePage().Render(c.Request.Context(), c.Writer)
+		templates.HomePage("Gin + Tailwind + Templ", "This is a dynamic message!").Render(c.Request.Context(), c.Writer)
 	})
 
 	// Start the server
