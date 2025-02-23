@@ -1,10 +1,8 @@
 package main
 
 import (
-	"net/http"
-
 	"github.com/gin-gonic/gin"
-	"github.com/lordofthemind/gin-tailwind-templ/templates"
+	"github.com/lordofthemind/gin-tailwind-templ/templates" // Adjust the import path
 )
 
 func main() {
@@ -15,7 +13,8 @@ func main() {
 
 	// Render the home page
 	r.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "", templates.HomePage())
+		// Use templ to render the template directly
+		templates.HomePage().Render(c.Request.Context(), c.Writer)
 	})
 
 	// Start the server
