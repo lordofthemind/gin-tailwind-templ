@@ -42,14 +42,14 @@ func HomePage(title string, message string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</title><link href=\"/static/css/output.css\" rel=\"stylesheet\"><script src=\"https://unpkg.com/htmx.org@1.9.10\"></script></head><body class=\"bg-gray-100 flex items-center justify-center min-h-screen bg-test\"><div class=\"bg-white shadow-lg rounded-lg p-6 w-full max-w-md border border-gray-200\"><h1 class=\"text-3xl font-semibold text-blue-600 text-center\">")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 2, "</title><link href=\"/static/css/output.css\" rel=\"stylesheet\"><script src=\"https://unpkg.com/htmx.org@1.9.10\"></script></head><body class=\"bg-green-300 flex items-center justify-center min-h-screen\"><div class=\"bg-white shadow-lg rounded-lg p-6 w-full max-w-md border border-gray-200\"><h1 class=\"text-3xl font-semibold text-red-600 text-center\">")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
 		var templ_7745c5c3_Var3 string
 		templ_7745c5c3_Var3, templ_7745c5c3_Err = templ.JoinStringErrs(title)
 		if templ_7745c5c3_Err != nil {
-			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internals/templates/home.templ`, Line: 15, Col: 84}
+			return templ.Error{Err: templ_7745c5c3_Err, FileName: `internals/templates/home.templ`, Line: 15, Col: 83}
 		}
 		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString(templ.EscapeString(templ_7745c5c3_Var3))
 		if templ_7745c5c3_Err != nil {
@@ -68,7 +68,7 @@ func HomePage(title string, message string) templ.Component {
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
-		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "</p><div class=\"mt-6 text-center\"><button hx-get=\"/api/data\" hx-swap=\"innerHTML\" class=\"bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300\">Click Me</button> <button onclick=\"document.documentElement.classList.toggle(&#39;dark&#39;)\" class=\"absolute top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700\">🌙</button></div></div></body></html>")
+		templ_7745c5c3_Err = templruntime.WriteString(templ_7745c5c3_Buffer, 4, "</p><div class=\"mt-6 text-center\"><button hx-get=\"/api/data\" hx-swap=\"innerHTML\" class=\"bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300\">Click Me (Changed)</button> <button onclick=\"document.documentElement.classList.toggle(&#39;dark&#39;)\" class=\"absolute top-4 right-4 p-2 rounded-full bg-gray-200 dark:bg-gray-700\">🌙</button></div></div></body></html>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}
