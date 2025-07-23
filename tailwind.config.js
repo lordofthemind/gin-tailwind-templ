@@ -1,6 +1,6 @@
 module.exports = {
     content: [
-        "./internals/templates/**/*.templ", // Watch Templ files
+        "./internals/templates/*.templ", // Watch Templ files
         "./static/**/*.css",
         "./main.go",
     ],
